@@ -7,11 +7,11 @@ CAUTIOUS! The app is composed of two entities. Please read the README.md file in
 
 I am assuming you have downloaded the repository and you set the right path.
 
-step 1 : 
+### step 1 : 
 
 Edit the file Shopify_api.js and replace the token with your own that you can get here : https://developer.spotify.com/
 
-step 2 :
+### step 2 :
 ```shell 
   # run command in TERMINAL or shell
   # Connection to the local server 
