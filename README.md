@@ -13,8 +13,8 @@ Edit the file Shopify_api.js and replace the token with your own that you can ge
 
 step 2 :
 ```shell 
-  // run command in TERMINAL or shell
-  // Connection to the local server 
+  # run command in TERMINAL or shell
+  # Connection to the local server 
   npx nodemon DB.js
 ```
 
