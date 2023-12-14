@@ -1,0 +1,81 @@
+<!-- HTML file for the audio app-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!--<meta http-equiv="refresh" content="3">--><!--refresh every 3 seconds-->
+    <title>MyApp</title>
+    <link rel="stylesheet" href="myApp_bg.css">
+    <link  rel="'icon" href='#'> <!--favicon-->
+</head>
+<body>
+    <style>
+        .Bdashboard{
+            display:none;
+        }
+    </style>
+    <div class="div1">
+        <!--<a href="#"><img src ='#' class='icon'></a> icon-->
+        <button id = 'btnSignUp'>Sign up</button>
+        <button id = 'btnSignIn'>Sign in</button>
+        <div class="options">
+    <button class = 'Bdashboard'><a href = '#' id ='dashboard'><p>my Dashboard</p></a></button>
+    <button class ='btnFinder'><a href="music_finder2.html" id = 'finder'><p id="mf">Music Finder</p></a></button>
+        </div>
+    </div>
+     <div class = 'popup' id="signupPopup">
+        <div class = 'popup-content'>
+            <form action = '/signup' method = 'POST' id= 'sign_up_form'> <!--1-->
+                <p id = 'texto'>Welcome to MyApp ! Please enter your user details below.</p><br> 
+                <label for ='email'> Email</label><br>
+                <input type = 'email' id = 'email' name = 'email' autocomplete="on"><br>
+                <label for = 'password'>Password</label><br>
+                <input type = 'password' id = 'password' name = 'password' autocomplete="on"><br>
+                <button id ='btn3'><a href ='#'>Sign up</a></button></form>
+            <button class= 'close' id = 'closeSignUp'>Close</button>
+        </div>
+    </div>
+    <div class = 'popup' id="signinPopup">
+            <div class = 'popup-content'>
+                <form action = '/signin' method = 'POST' id= 'sign_in_form'> 
+                    <p id = 'texto2'>Please sign in to continue</p><br> 
+                    <label for ='email'> Email</label><br>
+                    <input type = 'email' id = 'email2' name = 'email' autocomplete="on"><br>
+                    <label for = 'password'>Password</label><br>
+                    <input type = 'password' id = 'password2' name = 'password' autocomplete="on"><br>
+                    <button id ='btn6'><a href ='#'>Sign in</a></button></form> 
+                <button class= 'close' id = 'closeSignIn'>Close</button>
+            </div> 
+    </div>  
+    <div class="order">  
+        <div class = 'block2' ><a href="#" id ='Run'><h1>My App</h1></a><!--2--></div> 
+    </div> 
+    <div class = 'animation'>
+        <div id="particles-js"></div>
+    </div>  
+
+    <script>
+        const btnSignUp = document.getElementById('btn3');
+        const btnSignIn = document.getElementById('btn6');
+        const dasboard = document.querySelector('.Bdashboard');
+       try{ 
+       if( btnSignUp.addEventListener('click') || btnSignIn.addEventListener('click')){
+        dasboard.style.display = 'block';
+       }
+    }
+       catch(err){
+            console.error(err)
+       }
+        
+    </script>
+    <script type = 'text/javascript' src="myApp_bg.js"></script>
+    <script type = 'text/javascript' src="/particles.js/particles.min.js"></script>
+    <script type = 'text/javascript' src="/my-processor.js"></script>
+    <script type = 'text/javascript' src="/particles.js/demo/js/app.js"></script>
+    <script type = 'text/javascript' src =  '/DB.js'></script>
+    
+
+    </body>
+    
+    
+</html>

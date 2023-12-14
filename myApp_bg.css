@@ -1,0 +1,335 @@
+/* Design of the app background
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(12, 3, 47);
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    font-family:'Lato';
+}
+
+#particles-js{
+/* layer above the background linked with position attribute
+    width:100%;
+    z-index:-1;
+    margin-top:10vh;
+
+}
+
+.icon{
+    float:left;
+    width: 5%;
+    height:5%;
+    padding:10px;
+    margin-top: 5px;
+}
+
+button{
+    background-image:linear-gradient(to right, #00d2ff, #3a7bd5);
+    border-radius:20px;
+    border:0;
+    box-shadow: 0px 1px 4px black;
+    color:white;
+    cursor:pointer ; /* forme du curseur while hovering 
+    padding:10px 25px;
+
+}
+
+button:active{ /* when the button is clicked 
+  opacity:0.8;
+}
+
+
+.popup,.popup2{
+    background-color:rgba(0,0,0,0.3);
+    opacity:0;
+    position:fixed;
+    top:0;
+    left: 0;
+    bottom: 0px;
+    right:0px;
+    transition: all 0.3s ease-in-out; /* transition effect 
+    z-index:-1;
+    
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+/*.popup{
+    opacity:1;
+    z-index:999;
+}
+
+.model-inner,.model-inner2{
+    background-color:white;
+    border-radius: 5px;
+    box-shadow:0px 1px 4px black;
+    padding:15px 25px;
+    text-align:center;
+    width:380px;
+}
+
+.model-inner,.model-inner2, p{
+    line-height:24px;
+    margin: 10px 0;
+    
+}
+
+
+
+
+
+
+#btn1, #btn2{
+    float:right;
+    /*width: 10%;
+    height:10%;
+    border-radius:20px;
+    border-color:blue;
+    padding:10px;
+    background-color:blue;
+    margin-top:5px;
+    margin-right:10px; 
+}
+
+
+.block2{
+    font-family:"Lato";
+    font-size: 45px;
+    text-align:center;
+    color:white;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+    margin-top:45vh;
+    margin-left:40%;
+
+ 
+    
+}
+.close ,#btn3{
+    padding:10px;
+    margin-top: 10px;
+    width:40%;
+}
+#Run{
+    cursor:pointer;
+    text-decoration: none;
+    color:white;
+   
+}
+h1:hover{
+    transform:translateY(-30%);
+    transition: all 0.3s ease-in-out;
+}
+.order{
+   position: relative;
+}
+
+.block2, #particles-js{
+    position :absolute;
+}
+.container{
+    width: 25%;
+    height: 25%;
+}
+#dashboard, #finder{
+    cursor:pointer;
+    color:white;
+    text-decoration: none;
+    font-weight: 'bold';
+    font-family:'lato';
+}
+/***********************/
+
+
+
+/*
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(12, 3, 47);
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    font-family:'Lato';
+}
+
+#particles-js{
+    /* layer above the background linked with position attribute
+        width:100%;
+        z-index:-1;
+        margin-top:10vh;
+    
+    }
+
+button{
+    background-image:linear-gradient(to right, #00d2ff, #3a7bd5);
+    border-radius:20px;
+    border:0;
+    box-shadow: 0px 1px 4px black;
+    color:white;
+    cursor:pointer ; /* forme du curseur while hovering 
+    padding:10px 25px;
+
+}
+
+button:active{ /* when the button is clicked 
+    opacity:0.8;
+}
+    
+a{
+    text-decoration:none;
+    color:white
+}
+
+.popup {
+    background-color:rgba(0,0,0,0.3);
+    display:none;
+    top:0;
+    left: 0;
+    bottom: 0px;
+    right:0px;
+    transition: all 0.3s ease-in-out; /* transition effect
+    z-index:-2;
+    
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.container{
+   
+}*/
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato';
+    background-color: rgb(12, 3, 47);
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+button {
+    background-image:linear-gradient(to right, #00d2ff, #3a7bd5);
+    border-radius:20px;
+    border:0;
+    box-shadow: 0px 1px 4px black;
+    color:white;
+    cursor:pointer ; /* forme du curseur while hovering */
+    padding:10px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index:8;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+#dashboard, #finder{
+    cursor:pointer;
+    color:white;
+    text-decoration: none;
+    font-weight: 'bold';
+    font-family:'lato';
+    float:left;
+}
+
+.options{
+    float:right;
+}
+
+#Run{
+    cursor:pointer;
+    text-decoration: none;
+    color:white;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+   
+}
+h1:hover, button:hover{
+    transform:translateY(-30%);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.div1{
+   position:absolute;
+   top:20px;
+    width:100%;
+    z-index:3;
+}
+#btnSignUp,#btnSignIn, #finder, #dashboard{
+    float:right;
+    margin-right:10px;
+}
+
+
+h1{
+    cursor:pointer;
+    text-decoration: none;
+    text-align:center;
+    font-size: 100px;
+}
+.order{
+    position: absolute;
+    top:35vh;
+    width:100%;
+    z-index:1;
+}
+
+.btnFinder{
+    width:90px;
+    height:40px;
+    margin-right:10px;
+}
+
+#mf{
+    margin-top:-5px;
+    margin-right: -10px;
+}
+.animation{
+    width:100%;
+    height:100%;
+    position:relative;
+
+}

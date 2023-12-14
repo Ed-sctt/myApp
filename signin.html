@@ -1,0 +1,80 @@
+<!-- Sign in page + sign up page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!--<meta http-equiv="refresh" content="3">--><!--refresh every 3 seconds-->
+    <title>MyApp</title>
+    <link rel="stylesheet" href="myApp_bg.css">
+   <!-- <link  rel="'icon" href='#'> icon-->
+</head>
+<body>
+    <style>
+        button {
+    background-image:linear-gradient(to right, #00d2ff, #3a7bd5);
+    border-radius:20px;
+    border:0;
+    box-shadow: 0px 1px 4px black;
+    color:white;
+    cursor:pointer ; /* forme du curseur while hovering */
+    padding:10px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    }
+    
+    
+    </style>
+    
+    <div class="div1">
+        <div class="options">
+            <button class = 'Bdashboard'><a href = 'https://etandia.shinyapps.io/shiny/' id ='dashboard'><p class ='d' style="font-weight: bold;">Dashboard</p></a></button>
+            <button class ='btnFinder'><a href="music_finder2.html" id = 'finder'><p id="mf">Music Finder</p></a></button>
+            <form action = '/logout' method = 'post' id ='form1'>  
+                <button  class ='logout'> Log out</button>
+            </form>
+        </div>
+    </div>
+     <div class = 'popup' id="signupPopup">
+        <div class = 'popup-content'>
+            <form id= 'sign_up_form'> <!--action = '/signup' method = 'POST'-->
+                <p id = 'texto'>Welcome to MyApp ! Please enter your user details below.</p><br> 
+                <label for ='email'> Email</label><br>
+                <input type = 'email' id = 'email' name = 'email' autocomplete="on"><br>
+                <label for = 'password'>Password</label><br>
+                <input type = 'password' id = 'password' name = 'password' autocomplete="on"><br>
+                <button id ='btn3'><a href ='#'>Sign up</a></button></form>
+            <button class= 'close' id = 'closeSignUp'>Close</button>
+        </div>
+    </div>
+    <div class = 'popup' id="signinPopup">
+            <div class = 'popup-content'>
+                <form id= 'sign_in_form'> <!--action = '/signin' method = 'POST' -->
+                    <p id = 'texto2'>Please sign in to continue</p><br> 
+                    <label for ='email'> Email</label><br>
+                    <input type = 'email' id = 'email2' name = 'email' autocomplete="on"><br>
+                    <label for = 'password'>Password</label><br>
+                    <input type = 'password' id = 'password2' name = 'password' autocomplete="on"><br>
+                    <button id ='btn6'><a href ='#'>Sign in</a></button></form> 
+                <button class= 'close' id = 'closeSignIn'>Close</button>
+            </div> 
+    </div>  
+    <div class="order">  
+        <div class = 'block2' ><a href="#" id ='Run'><h1>My App</h1></a><!--2--></div> 
+    </div> 
+    <div class = 'animation'>
+        <div id="particles-js"></div>
+    </div>  
+      
+    <script type = 'text/javascript' src="myApp_bg.js"></script>
+    <script type = 'text/javascript' src="/particles.js/particles.min.js"></script>
+    <script type = 'text/javascript' src="/my-processor.js"></script>
+    <script type = 'text/javascript' src="/particles.js/demo/js/app.js"></script>
+    <script type = 'text/javascript' src =  '/DB.js'></script>
+    <script type = 'text/javascript' src =  '/logout.js'></script>
+    
+
+    </body>
+    
+    
+</html>
