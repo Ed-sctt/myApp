@@ -1,5 +1,5 @@
 
-MyApp
+# MyApp
 
 This file is meant to give some guidance on how to run the app. 
 
