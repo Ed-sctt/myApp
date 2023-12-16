@@ -4,7 +4,7 @@
 This file is meant to give some guidance on how to run the app. 
 
 ##### CAUTIOUS! 
-The app is composed of two entities. Please read the README.md file in " MyappR2 " branch or check the this link : https://ed-sctt.github.io/myApp/index.html in order to use MyAppR package in R. 
+The app is composed of two entities. Please read the README.md file in " MyappR2 " branch or check the this link : https://ed-sctt.github.io/myAppR/ in order to use MyAppR package in R. 
 
 I am assuming you have downloaded the repository and you set the right path.
 
