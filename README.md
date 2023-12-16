@@ -1,5 +1,5 @@
 
-# MyApp
+# MyAppJS
 
 This file is meant to give some guidance on how to run the app. 
 
